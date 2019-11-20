@@ -1,0 +1,27 @@
+{{name}}<br/>
+{{bill|currency:'INR'}}<br/>
+{{bill|number:'4.3-5'}}<br/>
+{{company|slice:3}}<br/>
+{{todate|date:'dd/MM/yy'}}<br/>
+{{students|sort}}<br/>
+{{employees|sorto:'name'|json}}<br/>
+
+ <table border=1>
+   <tr>
+     <th>Name</th>
+     <th>Age</th>
+     <th>Gender</th>
+     <th>City</th>
+   </tr>
+   <tr *ngFor="let s of employees">
+     <td>{{s.name}}</td>
+     <td>{{s.age}}</td>
+     <td>{{s.gender}}</td>
+     <td>{{s.city}}</td>
+   </tr>
+ </table>
+
+
+
+
+
